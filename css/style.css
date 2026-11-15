@@ -1,0 +1,1144 @@
+body {
+    background-color: #F1FFF8;
+    color: #212121;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+section {
+    padding: 24px;
+}
+
+nav {
+    padding: 24px 0px;
+}
+
+p {
+    color: #212121;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: #212121;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.add-line a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 60px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #049E1B;
+    border-radius: 9999px;
+    text-decoration: none;
+}
+
+.add-line p {
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.title__img {
+    width: 16vw;
+    max-width: 80px;
+    height: auto;
+}
+
+.title__text {
+    line-height: 1.25;
+}
+
+.title--wb {
+    font-size: 44px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.title--ws {
+    font-size: 24px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.title--bb {
+    font-size: 44px;
+    font-weight: 900;
+    color: #212121;
+}
+
+.title--bs {
+    font-size: 24px;
+    font-weight: 900;
+    color: #212121;
+}
+
+.title--yb {
+    font-size: 44px;
+    font-weight: 900;
+    color: #FCDC4A;
+}
+
+.title--rb {
+    font-size: 44px;
+    font-weight: 900;
+    color: #DE0000;
+}
+
+.title--gb {
+    font-size: 44px;
+    font-weight: 900;
+    color: #006934;
+}
+
+/* ここからセクションごとの設定 */
+/* メインビジュアル */
+
+.main-visual {
+    background: linear-gradient(to bottom, #137C23 0%, #14451B 100%);
+    border-radius: 0 0 40px 40px;
+    padding-bottom: 32px;
+}
+
+.main-visual__inner__img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.main-visual__inner__img2 {
+    display: block;
+    width: 40vw;
+    height: auto;
+    margin-inline: auto;
+    margin-bottom: 16px;
+}
+
+.main-visual__inner h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.main-visual__inner p {
+    color: #FFFFFF;
+}
+
+/* ナビゲーション */
+
+.anchor-links {
+    background-color: #14451B;
+    display: flex;
+}
+
+.anchor-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+}
+
+.anchor-links a + a {
+    border-left: 1px solid rgb(255 255 255 / 30%);
+}
+
+/* お悩み */
+
+.problems {
+    background-color: #FFF7D1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.problems__title {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 900;
+    color: #212121;
+}
+
+/* 見出し下の吹き出し風の罫線 */
+.problems__title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 13px;
+    margin-top: 10px;
+    background: url("../img/problems-divider.svg") center / 100% 100% no-repeat;
+    transform: scaleX(-1);
+}
+
+.problems__boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.problems__box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-align: left;
+    padding: 12px 10px;
+    border: 3px solid #212121;
+}
+
+.problems__box p {
+    font-weight: 900;
+}
+
+.problems__box img {
+    width: 30px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.sub-img {
+    width: 105vw;
+    max-width: none;
+    height: auto;
+    margin-top: -10px;
+}
+
+/* メリット */
+
+.benefits {
+    background-color: #006934;
+}
+
+.benefits__cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits__card {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+.benefits__card__sub-title {
+    font-family: "Barlow Condensed";
+    font-weight: 600;
+    color: #006934;
+    margin-bottom: 8px;
+}
+
+.benefits__card img {
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.benefits__card h3 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.google-map {
+    width: 100%;
+    height: 200px;
+    margin-top: 16px;
+}
+
+/* 何者？ */
+
+.about {
+    background-color: #FFF7D1;
+}
+
+/* 写真を見せる窓：セクションの左右の余白を打ち消す */
+.about__imgs {
+    margin-inline: -24px;
+    overflow: hidden;
+}
+
+/* 写真2セットを横に並べて動かす */
+.about__imgs__track {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    display: flex;
+    width: max-content;
+    animation: photo-scroll 20s linear infinite;
+}
+
+/* 写真4枚を横並びにする */
+.about__imgs__group {
+    display: flex;
+    flex-shrink: 0;
+    gap: 8px;
+    padding-right: 8px;
+}
+
+/* 写真のサイズを固定する */
+.about__img {
+    display: block;
+    width: 120px;
+    height: 160px;
+    max-width: none;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 全体の半分＝写真1セット分だけ左へ移動 */
+@keyframes photo-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.about__card__name {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: -8px;
+    gap: 12px;
+}
+
+.about__card__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about__card__title--en {
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+
+.dots {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #006934;
+    background-color: currentColor;
+    box-shadow:
+        -8px 0 0 currentColor,
+         8px 0 0 currentColor;
+    margin-inline: 8px;
+}
+
+/* ほかにも */
+
+.extras__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.extras__inner__box + .extras__inner__box {
+    border-top: 1px solid #14451B;
+    padding-top: 24px;
+}
+
+.extras__inner__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 17 / 10;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-top: 12px;
+}
+
+.extras__inner__box__imgs {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.extras__inner__box__img {
+    display: block;
+    width: calc((100% - 36px) / 4);
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ものづくり */
+
+.creating {
+    background-color: #14451B;
+}
+
+.creating__intro {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.creating__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.creating__card {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.creating__card__img {
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.creating__card__status {
+    font-size: 14px;
+    color: #006934;
+}
+
+.creating__note {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+/* よくある質問 */
+
+.faq {
+    background-color: #FFF7D1;
+}
+
+.faq .title {
+    margin-bottom: 24px;
+}
+
+.faq__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.faq__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.faq__question,
+.faq__answer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.faq__question {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.faq__answer {
+    border-top: 1px solid rgb(33 33 33 / 15%);
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.faq__mark {
+    flex: 0 0 28px;
+    color: #006934;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.faq__text {
+    flex: 1;
+    min-width: 0;
+}
+
+/* お問い合わせ */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #FFF7D1;
+}
+
+.contact .title {
+    margin-bottom: 0;
+}
+
+.contact .title__text {
+    line-height: 38px;
+}
+
+.contact__intro {
+    text-align: center;
+}
+
+/* Slackの案内とフォームを白いカードにまとめる */
+.contact__slack,
+.contact__form__box {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.contact__slack {
+    gap: 12px;
+}
+
+.contact__form__box {
+    gap: 16px;
+}
+
+.contact__slack__title,
+.contact__form__title {
+    margin-bottom: 0;
+    color: #006934;
+    font-weight: 900;
+}
+
+.contact__slack__link,
+.contact__form__button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 52px;
+    padding: 12px 16px;
+    border-radius: 9999px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact__slack__link {
+    border: 1px solid #006934;
+    color: #006934;
+    background-color: #FFFFFF;
+}
+
+/* ラベルと入力欄を縦に並べる */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact__form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact__form__label {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+
+.contact__form__input,
+.contact__form__select,
+.contact__form__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid rgb(0 105 52 / 35%);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #212121;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact__form__input,
+.contact__form__select {
+    min-height: 48px;
+}
+
+.contact__form__textarea {
+    min-height: 112px;
+    resize: vertical;
+}
+
+.contact__form__input::placeholder,
+.contact__form__textarea::placeholder {
+    color: #666666;
+    opacity: 1;
+}
+
+/* 複数選択できる話題のチェック欄 */
+.contact__form__topics {
+    min-width: 0;
+}
+
+.contact__form__topics legend {
+    margin-bottom: 12px;
+}
+
+.contact__form__topic {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 40px;
+}
+
+.contact__form__topic input {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #006934;
+    cursor: pointer;
+}
+
+.contact__form__topic label {
+    flex: 1;
+    padding-block: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.contact__form__button {
+    border: 0;
+    background-color: #049E1B;
+    color: #FFFFFF;
+}
+
+/* HTMLのdisabledにより、デモでは送信しない */
+.contact__form__button:disabled {
+    cursor: not-allowed;
+}
+
+.contact__form__note {
+    color: #006934;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* キーボードで選んでいる場所を分かりやすくする */
+.contact a:focus-visible,
+.contact input:focus-visible,
+.contact select:focus-visible,
+.contact textarea:focus-visible,
+.contact button:focus-visible {
+    outline: 2px solid #006934;
+    outline-offset: 3px;
+}
+
+/* フッター */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px;
+    background-color: #14451B;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer__name {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+}
+
+.footer__top-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.75;
+    text-decoration: none;
+}
+
+.footer__top-link:focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 4px;
+}
+
+.footer__copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 小さい画面でボタンや装飾画像が横スクロールを作らないようにする */
+.add-line a {
+    max-width: 100%;
+}
+
+.problems {
+    overflow: hidden;
+}
+
+/* PC版：900px以上で配置を切り替える。スマホ用の指定は上に残す */
+@media (min-width: 900px) {
+    body {
+        /* Figmaの本文幅1000px。狭いPC画面では左右32pxを確保する */
+        --content-width: min(1000px, calc(100vw - 64px));
+        --page-padding: max(32px, calc((100% - 1000px) / 2));
+    }
+
+    section {
+        padding: 56px var(--page-padding);
+    }
+
+    .title {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .title__img {
+        width: 50px;
+    }
+
+    .benefits .title__img {
+        width: 80px;
+    }
+
+    .title__text,
+    .contact .title__text {
+        line-height: 64px;
+    }
+
+    /* スマホ用の見出しの改行をPCではつなげる */
+    .title__text br {
+        display: none;
+    }
+
+    /* ロゴ・文章を左、キャラクターを右に配置 */
+    .main-visual {
+        padding-block: 52px;
+    }
+
+    .main-visual__inner {
+        display: grid;
+        grid-template-columns: minmax(0, 640fr) minmax(0, 356fr);
+        grid-template-rows: auto auto auto;
+        gap: 24px 4px;
+        align-items: start;
+        min-height: 504px;
+    }
+
+    .main-visual__inner__img1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .main-visual__inner__img2 {
+        grid-column: 2;
+        grid-row: 1 / 4;
+        align-self: center;
+        width: 100%;
+        height: 504px;
+        object-fit: contain;
+        margin: 0;
+    }
+
+    .main-visual__inner h1 {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 44px;
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+
+    .main-visual__inner p {
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /* LINEボタンとナビゲーション */
+    .add-line {
+        padding-block: 32px;
+    }
+
+    .add-line a {
+        width: 400px;
+        height: 56px;
+    }
+
+    .add-line p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .faq + .add-line {
+        padding-block: 48px;
+    }
+
+    .add-line .title {
+        margin-bottom: 24px;
+    }
+
+    .anchor-links {
+        padding: 18px var(--page-padding);
+    }
+
+    .anchor-links a {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    /* お悩みの3つのボックスを横並びにする */
+    .problems {
+        padding-block: 48px;
+    }
+
+    .problems__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .problems__title::after {
+        width: 446px;
+        margin-inline: auto;
+    }
+
+    .problems__boxs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 32px;
+    }
+
+    .problems__box {
+        padding: 16px 13px;
+        gap: 10px;
+    }
+
+    .problems__box p {
+        line-height: 24px;
+    }
+
+    .sub-img {
+        width: 876px;
+        max-width: 100%;
+        margin-top: 32px;
+    }
+
+    /* メリットは画像と文章の2列。偶数番だけ左右を入れ替える */
+    .benefits__cards {
+        gap: 20px;
+    }
+
+    .benefits__card {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "image label"
+            "image heading"
+            "image text"
+            "map map";
+        column-gap: 20px;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .benefits__card:nth-child(even) {
+        grid-template-areas:
+            "label image"
+            "heading image"
+            "text image"
+            "map map";
+    }
+
+    .benefits__card > img {
+        grid-area: image;
+        align-self: start;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .benefits__card > p {
+        grid-area: text;
+    }
+
+    .benefits__card > .benefits__card__sub-title {
+        grid-area: label;
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+
+    .benefits__card h3 {
+        grid-area: heading;
+    }
+
+    .benefits__card h3 br {
+        display: none;
+    }
+
+    .google-map {
+        grid-area: map;
+        height: 300px;
+    }
+
+    /* 写真のループを保ち、4枚が本文幅に収まる大きさにする */
+    .about__imgs {
+        margin-inline: 0;
+    }
+
+    .about__imgs__track {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .about__img {
+        width: calc((var(--content-width) - 24px) / 4);
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    .about__card {
+        gap: 24px;
+        padding: 32px;
+    }
+
+    .about__card__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 12px 24px;
+    }
+
+    .about__card__name,
+    .about__card__name h3 {
+        margin-bottom: 0;
+    }
+
+    .about__card > p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /* サシャと本の話、作品カードをそれぞれ2列にする */
+    .extras__inner,
+    .creating__cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px;
+    }
+
+    .extras__inner__box:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extras__inner__box + .extras__inner__box {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .extras__inner__img {
+        order: 1;
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    .extras__inner__box__imgs {
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .extras__inner__box__img {
+        width: calc((100% - 48px) / 4);
+        aspect-ratio: 5 / 7;
+    }
+
+    .creating__intro,
+    .contact__intro {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .creating__card__img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+    }
+
+    .creating__card__title {
+        font-size: 24px;
+        line-height: 38px;
+        margin-bottom: 16px;
+    }
+
+    .creating__note {
+        margin-top: 24px;
+    }
+
+    /* Slackは中央揃え。フォームの入力部分は576pxに収める */
+    .contact__slack {
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .contact__slack__link {
+        width: 272px;
+        min-height: 56px;
+    }
+
+    .contact__form__box {
+        align-items: center;
+        gap: 20px;
+        padding: 32px;
+        margin-top: 16px;
+    }
+
+    .contact__form__box > * {
+        width: 100%;
+        max-width: 576px;
+    }
+
+    .contact__form__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .contact__form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 24px;
+    }
+
+    .contact__form > * {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
+
+    .contact__form > .contact__form__field:nth-child(-n + 2) {
+        grid-column: auto;
+    }
+
+    /* 話題を上から4つずつ、左列→右列の順に並べる */
+    .contact__form__topics {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+    }
+
+    .contact__form__button {
+        justify-self: center;
+        width: 400px;
+        max-width: 100%;
+        min-height: 56px;
+    }
+
+    /* フッターは名前・著作権・先頭へのリンクを横並びにする */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1.8fr 1fr;
+        gap: 24px;
+        padding: 32px var(--page-padding);
+    }
+
+    .footer__name {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer__copyright {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .footer__top-link {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: right;
+    }
+}
